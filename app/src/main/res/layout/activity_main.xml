@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/etName"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <CheckBox
+                android:id="@+id/cbAgree"
+                android:text="AGB akzeptieren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <Switch
+                android:id="@+id/swWifi"
+                android:text="WLAN aktivieren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <RadioGroup
+                android:id="@+id/rgOptions"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioButton
+                    android:id="@+id/rbOptA"
+                    android:text="Option A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <RadioButton
+                    android:id="@+id/rbOptB"
+                    android:text="Option B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <Button
+                android:id="@+id/btnShowMore"
+                android:text="Mehr anzeigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+                android:id="@+id/lyHidden"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <SeekBar
+                    android:id="@+id/sbVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:id="@+id/tvVolume"
+                    android:text="Lautstärke: 0 %"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/pbProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="25" />
+
+        <!-- Navigation zur Sensor-View -->
+        <Button
+                android:id="@+id/btnNext"
+                android:text="Sensor-View öffnen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

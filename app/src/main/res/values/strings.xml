@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <string-array name="countries">
+        <item>Schweiz</item>
+        <item>Deutschland</item>
+        <item>Österreich</item>
+        <item>Frankreich</item>
+    </string-array>
+</resources>
